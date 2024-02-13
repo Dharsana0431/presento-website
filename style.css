@@ -392,11 +392,11 @@ margin-left:15px;
     width: 100%;
     margin: 10px;
 }
-/* .port-items:hover img{
+.port-items:hover img{
     transform: scale(1.2);
     transition: all ease 0.5s;
 
-} */
+}
 .port-items img{
     transition: all ease 0.5s;
 }

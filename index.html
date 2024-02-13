@@ -207,7 +207,7 @@
         <div class="col-lg-3 text-center mt-5 ">
           <div class="count-box pt-3">
             <i class="fa-regular fa-face-smile"></i>
-            <h1 class="cbh">232</h1>
+            <h1 class="counter-count cbh">232</h1>
             <p class="cbp">Happy Clients</p>
           </div>
         </div>
@@ -215,7 +215,7 @@
         <div class="col-lg-3 text-center mt-5 ">
           <div class="count-box pt-3">
             <i class="fa-regular fa-file-image"></i>
-            <h1 class="cbh">521</h1>
+            <h1 class="counter-count cbh">521</h1>
             <p class="cbp">Projects</p>
           </div>
         </div>
@@ -223,7 +223,7 @@
         <div class="col-lg-3 text-center mt-5 ">
           <div class="count-box pt-3">
             <i class="fa-solid fa-headphones"></i>
-            <h1 class="cbh">1463</h1>
+            <h1 class="counter-count cbh">1463</h1>
             <p class="cbp">Hours Of Support</p>
           </div>
         </div>
@@ -231,7 +231,7 @@
         <div class="col-lg-3 text-center mt-5 ">
           <div class="count-box pt-3">
             <i class="fa-solid fa-people-group"></i>
-            <h1 class="cbh">15</h1>
+            <h1 class="counter-count cbh">15</h1>
             <p class="cbp">Hard Workers</p>
           </div>
         </div>
@@ -455,20 +455,20 @@
       </div>
       <ul class="nav nav-pills justify-content-center" data-aos="fade-up" data-aos-duration="2000">
         <li class="nav-item-1 ">
-        <a class="nav-link active bg-danger " href="#">All</a>
+        <a class="nav-link active bg-danger " data-toggle="portfilter" data-target="all">All</a>
+        </li>
+        <li class="nav-item-1" >
+        <a class="nav-link" data-toggle="portfilter" data-target="app">App</a>
         </li>
         <li class="nav-item-1">
-        <a class="nav-link" href="#">App</a>
+        <a class="nav-link" data-toggle="portfilter" data-target="card">Card</a>
         </li>
         <li class="nav-item-1">
-        <a class="nav-link" href="#">Card</a>
-        </li>
-        <li class="nav-item-1">
-        <a class="nav-link" href="#">Web</a>
+        <a class="nav-link" data-toggle="portfilter" data-target="web">Web</a>
         </li>
       </ul>
       <div class="row" data-aos="fade-up" data-aos-duration="2000">
-        <div class="col-lg-4 col-12 col-md-6">
+        <div class="col-lg-4 col-12 col-md-6" data-tag="app">
           <div class="port-items">
             <img src="./images/portfolio-1.jpg" class="img-fluid" width="100%">
             <div class="port-box">
@@ -483,7 +483,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-12 col-md-6">
+        <div class="col-lg-4 col-12 col-md-6" data-tag="web">
           <div class="port-items">
             <img src="./images/portfolio-2.jpg" class="img-fluid">
             <div class="port-box">
@@ -498,8 +498,8 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-12 col-md-6">
-          <div class="port-items">
+        <div class="col-lg-4 col-12 col-md-6" data-tag="app">
+          <div class="port-items" >
             <img src="./images/portfolio-3.jpg" class="img-fluid">
             <div class="port-box">
               <div class="port-box1">
@@ -513,7 +513,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-12 col-md-6">
+        <div class="col-lg-4 col-12 col-md-6" data-tag="card">
           <div class="port-items">
             <img src="./images/portfolio-4.jpg" class="img-fluid">
             <div class="port-box">
@@ -528,7 +528,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-12 col-md-6">
+        <div class="col-lg-4 col-12 col-md-6" data-tag="web">
           <div class="port-items">
             <img src="./images/portfolio-5.jpg" class="img-fluid">
             <div class="port-box">
@@ -543,7 +543,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-12 col-md-6">
+        <div class="col-lg-4 col-12 col-md-6" data-tag="app">
           <div class="port-items">
             <img src="./images/portfolio-6.jpg" class="img-fluid">
             <div class="port-box">
@@ -558,7 +558,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-12 col-md-6">
+        <div class="col-lg-4 col-12 col-md-6" data-tag="card">
           <div class="port-items">
             <img src="./images/portfolio-7.jpg" class="img-fluid">
             <div class="port-box">
@@ -573,7 +573,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-12 col-md-6">
+        <div class="col-lg-4 col-12 col-md-6" data-tag="card">
           <div class="port-items">
             <img src="./images/portfolio-8.jpg" class="img-fluid">
             <div class="port-box">
@@ -588,7 +588,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-12 col-md-6">
+        <div class="col-lg-4 col-12 col-md-6" data-tag="web">
           <div class="port-items">
             <img src="./images/portfolio-9.jpg" class="img-fluid">
             <div class="port-box">
@@ -1188,5 +1188,6 @@ margin:0,
   }
 })
 </script>
+<script src="script.js"></script>
 </body>
 </html>
